@@ -1,0 +1,113 @@
+{
+  "name": "OpenBeta-woodpecker",
+  "id": "OpenBeta-woodpecker",
+  "description": "",
+  "lang": "en-US",
+  "start_url": "/index.html",
+  "short_name": "Woodpecker",
+  "categories": ["Sport"],
+  "display": "standalone",
+  "theme_color": "#ffffff",
+  "userAgentInfo": "openBeta woodpecker written by strukturart@gmail.com",
+
+  "icons": [
+    {
+      "src": "assets/icons/icon-56-56.png",
+      "type": "image/png",
+      "sizes": "56x56"
+    },
+    {
+      "src": "assets/icons/icon-112-112.png",
+      "type": "image/png",
+      "sizes": "112x112"
+    },
+
+    {
+      "src": "assets/icons/icon-16-16.png",
+      "type": "image/png",
+      "sizes": "16x16"
+    },
+    {
+      "src": "assets/icons/icon-32-32.png",
+      "type": "image/png",
+      "sizes": "32x32"
+    },
+
+    {
+      "src": "assets/icons/favicon.ico",
+      "type": "image/x-icon",
+      "sizes": "16x16 32x32"
+    },
+    {
+      "src": "assets/icons/icon-192-192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "assets/icons/icon-512-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+
+  "b2g_features": {
+    "version": "0.4",
+    "id": "OpenBeta-woodpecker",
+    "subtitle": "",
+    "core": true,
+    "type": "privileged",
+    "display": "fullscreen",
+
+    "developer": {
+      "name": "strukturart",
+      "url": "https://github.com/strukturart/openBeta-woodpecker"
+    },
+
+    "dependencies": {
+      "ads-sdk": "1.5.8"
+    },
+
+    "messages": [
+      { "serviceworker-notification": "index.html" },
+      { "activity": "/index.html" }
+    ],
+
+    "activities": {
+      "feedolin": {}
+    },
+
+    "serviceworker": {
+      "script_url": "sw.js"
+    },
+
+    "permissions": {
+      "desktop-notification": {
+        "description": "Needed to fire system notifications"
+      },
+      "alarms": {
+        "description": "Required to schedule alarms"
+      },
+      "feature-detection": {
+        "description": "query which keys are available"
+      },
+      "mobiledata": {},
+      "wifidata": {},
+      "calllog": {},
+
+      "audio-channel-content": {
+        "description": "Allow background audio playback."
+      },
+      "volumemanager": { "description": "" },
+      "device-storage:sdcard": {
+        "description": "Read/Write from/to sd-card",
+        "access": "readwrite"
+      },
+      "spatialnavigation-app-manage": {
+        "navigator.spatialNavigationEnabled": false
+      },
+      "systemXHR": {
+        "description": "Required to load remote content"
+      }
+    }
+  }
+}

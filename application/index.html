@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>OpenBeta</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <link rel="icon" href="assets/icons/favicon.ico" sizes="any">
+
+    <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="stylesheet" href="assets/css/leaflet.css" />
+
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/grid.css" />
+    <link rel="stylesheet" href="assets/css/qr-reader.css" />
+
+  
+
+</head>
+
+<meta
+name="viewport"
+content="width=device-width,user-scalable=no,initial-scale=1"
+/>
+
+<body data-swipe-timeout="2000" data-swipe-threshold="150">
+    <div id="toast"></div>
+    <div id="side-toast"></div>
+
+
+    <div id="wrapper" class="flex">
+
+     
+
+      
+
+        <div class="loading-spinner">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+       
+       
+
+            <div id="bottom-bar">
+                <div class="inner flex">
+                    <div class="button-left"></div>
+                    <div class="button-center"></div>
+                    <div class="button-right"></div>
+                </div>
+            </div>
+
+            <div id="top-bar">
+                <div class="inner flex">
+                    <div class="button-left"></div>
+                    <div class="button-center"></div>
+                    <div class="button-right"></div>
+                </div>
+            </div>
+        
+
+
+        <div id="qr-screen">
+            <video id="video"></video>
+            <div id="corner-nw"></div>
+            <div id="corner-no"></div>
+            <div id="corner-so"></div>
+            <div id="corner-sw"></div>
+        </div>
+
+        <div id="app" class="width-100 flex justify-content-spacearound"></div>
+    </div>
+
+    </div>
+
+</body>
+<script type="module" src="index.js"></script>
+
+
+</html>
